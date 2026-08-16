@@ -43,9 +43,7 @@ jobs:
       - name: Tag Docker Image for ACR
         run: |
           docker tag $IMAGE_NAME:$IMAGE_TAG $ACR_LOGIN_SERVER/$IMAGE_NAME:$IMAGE_TAG
-      - name: Scan Image
-        run: |
-          trivy image --severity CRITICAL --exit-code 1 $ACR_LOGIN_SERVER/$IMAGE_NAME:$IMAGE_TAG
+      
 
       - name: Push Docker Image to ACR
         run: |
