@@ -18,8 +18,8 @@ jobs:
     env:
       IMAGE_NAME: axion-ingestion-service
       IMAGE_TAG: v4
-      ACR_NAME: acrdevtodoapp01
-      ACR_LOGIN_SERVER: acrdevtodoapp01.azurecr.io
+      ACR_NAME: acrdevtodoapp001
+      ACR_LOGIN_SERVER: acrdevtodoapp001.azurecr.io
 
     steps:
       - name: Checkout code
